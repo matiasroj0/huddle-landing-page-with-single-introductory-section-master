@@ -1,0 +1,180 @@
+:root {
+    /* primary */
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*  */
+
+body {
+    background: url(/images/bg-mobile.svg);
+    background-color: var(--violet);
+    padding: 1rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    width: 35%;
+    padding-bottom: 2.5rem;
+}
+
+.illustration {
+    padding-bottom: 2.7rem;
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+}
+
+.text-container h2 {
+    font-family: 'Poppins', sans-serif; 
+    padding-bottom: 1rem;
+    font-size: 1.65rem;
+}
+
+.text-container p {
+    font-size: .96rem;
+    padding-bottom: 1.5rem;
+}
+
+.text-container button {
+    padding: .5rem 4.5rem;
+    border-radius: 1.5rem;
+    border: 0;
+    font-size: .85rem;
+    color: var(--violet);
+    cursor: pointer;
+}
+
+.text-container button:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+.social-icons {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: .7rem;
+}
+
+.social-icons > * {
+    padding: .5rem;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.social-icons > *:hover {
+    color: var(--soft-magenta);
+    border-radius: 50%;
+    border: 1px solid var(--soft-magenta);
+}
+
+.fa-facebook-f {
+    padding: .5rem .62rem;
+}
+
+@media (min-width: 800px) {
+    body {
+        background: url(/images/bg-desktop.svg);
+        background-color: var(--violet);
+        padding: 2rem;
+    }
+
+    main {
+        display: flex;
+        gap: 3rem;
+        padding: 0 2.5rem;
+    }   
+    
+    main > * {
+        flex: 1;
+    }
+
+    .logo {
+        width: 11%;
+        padding-bottom: 4rem;
+    }
+
+    .illustration {
+        padding-bottom: 0;
+    }
+
+    .text-container {
+        text-align: initial;
+        padding-top: 3rem;
+    }
+
+    .text-container h2 {
+        font-size: 2.4rem;
+    }
+
+    .text-container p {
+        padding-right: 5rem;
+        font-size: 1.1rem;
+    }
+
+    .text-container button {
+        padding: .8rem 5rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+    }
+    
+    .social-icons {
+        padding: 0rem 5rem;
+        gap: .7rem;
+    }
+    
+    .social-icons > * {
+        padding: .5rem;
+        color: white;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    footer {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 3rem;
+    }
+    
+    .fa-facebook-f {
+        padding: .5rem .66rem;
+    }
+}
