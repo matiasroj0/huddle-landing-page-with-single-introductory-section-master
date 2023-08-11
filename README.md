@@ -4,7 +4,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://silver-kangaroo-8f7e2e.netlify.app/
 
 ### Screenshot
 
